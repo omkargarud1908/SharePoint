@@ -1,6 +1,5 @@
 import * as React from 'react';
 import type { ITeamAnnouncementsProps } from './ITeamAnnouncementsProps';
-import styles from './TeamAnnouncements.module.scss';
 
 interface IAnnouncementItem {
   id: number;
@@ -38,6 +37,57 @@ const announcementItems: IAnnouncementItem[] = [
   }
 ];
 
+const styles: { [key: string]: string } = {
+  dashboard: 'dashboard',
+  headerSection: 'headerSection',
+  pageTitle: 'pageTitle',
+  pageDescription: 'pageDescription',
+  dateBadge: 'dateBadge',
+  statsGrid: 'statsGrid',
+  statsCard: 'statsCard',
+  statsValue: 'statsValue',
+  statsLabel: 'statsLabel',
+  summaryBanner: 'summaryBanner',
+  summaryLabel: 'summaryLabel',
+  summaryText: 'summaryText',
+  listSection: 'listSection',
+  sectionTitle: 'sectionTitle',
+  announcementList: 'announcementList',
+  announcementCard: 'announcementCard',
+  announcementTopRow: 'announcementTopRow',
+  categoryBadge: 'categoryBadge',
+  announcementDate: 'announcementDate',
+  announcementTitle: 'announcementTitle',
+  announcementOwner: 'announcementOwner',
+  announcementFooter: 'announcementFooter'
+};
+
+const componentStyles = `
+.dashboard{padding:24px;background:#f7f9fc;border-radius:16px;font-family:"Segoe UI",Arial,sans-serif}
+.headerSection{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:24px}
+.pageTitle{margin:0 0 6px 0;font-size:32px;font-weight:700;color:#111827}
+.pageDescription{margin:0;color:#6b7280;font-size:15px;line-height:1.6;max-width:620px}
+.dateBadge{display:inline-flex;align-items:center;justify-content:center;min-width:110px;padding:10px 14px;border-radius:999px;background:#eef2ff;color:#4338ca;font-size:13px;font-weight:700}
+.statsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:24px}
+.statsCard{background:#fff;border-radius:16px;padding:20px;box-shadow:0 16px 30px rgba(15,23,42,.08);border:1px solid rgba(148,163,184,.16)}
+.statsValue{font-size:30px;font-weight:700;color:#111827;margin-bottom:8px}
+.statsLabel{font-size:13px;color:#6b7280;letter-spacing:.01em}
+.summaryBanner{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;border-radius:16px;padding:18px 22px;margin-bottom:24px;border:1px solid rgba(148,163,184,.18)}
+.summaryLabel{font-size:12px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.summaryText{margin:0;font-size:14px;color:#334155}
+.listSection{margin-top:10px}
+.sectionTitle{font-size:20px;font-weight:700;color:#111827;margin-bottom:16px}
+.announcementList{display:grid;gap:14px}
+.announcementCard{background:#fff;border-radius:16px;padding:20px;box-shadow:0 16px 30px rgba(15,23,42,.08);border:1px solid rgba(148,163,184,.18)}
+.announcementTopRow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.categoryBadge{background:#eef2ff;color:#1d4ed8;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.announcementDate{font-size:12px;color:#475569}
+.announcementTitle{font-size:18px;font-weight:700;color:#0f172a;margin-bottom:10px}
+.announcementOwner{margin:0;font-size:14px;color:#475569;line-height:1.7}
+.announcementFooter{margin-top:16px;font-size:13px;color:#64748b}
+@media screen and (max-width:860px){.headerSection,.statsGrid{grid-template-columns:1fr}.headerSection{flex-direction:column;align-items:stretch}}
+`;
+
 const TeamAnnouncements: React.FC<ITeamAnnouncementsProps> = (props) => {
   const today = new Date().toLocaleDateString(undefined, {
     weekday: 'long',
@@ -47,6 +97,7 @@ const TeamAnnouncements: React.FC<ITeamAnnouncementsProps> = (props) => {
 
   return (
     <section className={styles.dashboard}>
+      <style>{componentStyles}</style>
       <div className={styles.headerSection}>
         <div>
           <h1 className={styles.pageTitle}>{props.title}</h1>

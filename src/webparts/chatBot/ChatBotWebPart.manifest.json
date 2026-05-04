@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "12f69e2c-96a2-49c9-bdb0-9ad838227409",
+  "alias": "ChatBotWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Chat Bot" },
+    "description": { "default": "SharePoint support assistant chatbot powered by the ticket backend." },
+    "officeFabricIconFontName": "ChatBot",
+    "properties": {
+      "title": "SharePoint Support Assistant",
+      "description": "Ask questions about SharePoint navigation, troubleshooting, and support requests.",
+      "apiBaseUrl": "http://localhost:4001"
+    }
+  }]
+}
