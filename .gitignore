@@ -37,4 +37,5 @@ obj
 # Styles Generated Code
 *.scss.ts
 
+# Local env files
 .env
