@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "a7b3c4d5-e6f7-48a9-b0c1-d2e3f4g5h6i7",
+  "alias": "CustomAppBarWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Custom AppBar" },
+    "description": { "default": "A customized app bar and sidebar navigation component" },
+    "officeFabricIconFontName": "AppIconDefault",
+    "properties": {
+      "title": "Custom App Bar"
+    }
+  }]
+}

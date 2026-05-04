@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-team-announcement-client-side-solution",
+    "id": "7904dea7-0313-4c09-ac74-73a2d95c4b5b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-team-announcement description"
+      },
+      "longDescription": {
+        "default": "spfx-team-announcement description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-team-announcement Feature",
+        "description": "The feature that activates elements of the spfx-team-announcement solution.",
+        "id": "4a22fb5d-cfb0-4fb9-b778-ef5075e14bf1",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-team-announcement.sppkg"
+  }
+}

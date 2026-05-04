@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "team-announcements-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/teamAnnouncements/TeamAnnouncementsWebPart.js",
+          "manifest": "./src/webparts/teamAnnouncements/TeamAnnouncementsWebPart.manifest.json"
+        }
+      ]
+    },
+    "custom-app-bar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customAppBar/CustomAppBarWebPart.js",
+          "manifest": "./src/webparts/customAppBar/CustomAppBarWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TeamAnnouncementsWebPartStrings": "lib/webparts/teamAnnouncements/loc/{locale}.js",
+    "CustomAppBarWebPartStrings": "lib/webparts/customAppBar/loc/{locale}.js"
+  }
+}

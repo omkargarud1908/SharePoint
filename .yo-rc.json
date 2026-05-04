@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.1",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "spfx-team-announcement",
+    "libraryId": "7904dea7-0313-4c09-ac74-73a2d95c4b5b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-team-announcement",
+    "solutionShortDescription": "spfx-team-announcement description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
