@@ -21,10 +21,10 @@ export default class ChatBotWebPart extends BaseClientSideWebPart<IChatBotWebPar
     const element: React.ReactElement<IChatBotProps> = React.createElement(
       ChatBot,
       {
-        title: this.properties.title || 'SharePoint Support Assistant',
+        title: this.properties.title || 'Helper Bot',
         description:
           this.properties.description ||
-          'Ask questions about SharePoint navigation, troubleshooting, and support requests.',
+          'Ask questions about SharePoint navigation and support requests.',
         apiBaseUrl: this.properties.apiBaseUrl || 'http://localhost:4000'
       }
     );

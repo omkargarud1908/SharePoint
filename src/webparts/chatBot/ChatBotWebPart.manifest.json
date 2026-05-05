@@ -16,8 +16,8 @@
     "description": { "default": "SharePoint support assistant chatbot powered by the ticket backend." },
     "officeFabricIconFontName": "ChatBot",
     "properties": {
-      "title": "SharePoint Support Assistant",
-      "description": "Ask questions about SharePoint navigation, troubleshooting, and support requests.",
+      "title": "Helper Bot",
+      "description": "Ask questions about SharePoint.",
       "apiBaseUrl": "http://localhost:4001"
     }
   }]
