@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "a7b3c4d5-e6f7-48a9-b0c1-d2e3f4g5h6i7",
+  "id": "a7b3c4d5-e6f7-48a9-b0c1-d2e3f4050607",
   "alias": "CustomAppBarWebPart",
   "componentType": "WebPart",
   "version": "*",

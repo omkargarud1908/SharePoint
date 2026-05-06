@@ -18,7 +18,7 @@
     "properties": {
       "title": "Helper Bot",
       "description": "Ask questions about SharePoint.",
-      "apiBaseUrl": "http://localhost:4001"
+      "apiBaseUrl": "https://beticketclassification.onrender.com"
     }
   }]
 }
