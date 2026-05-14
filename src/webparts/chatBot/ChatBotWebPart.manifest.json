@@ -16,7 +16,7 @@
     "description": { "default": "SharePoint support assistant chatbot powered by the ticket backend." },
     "officeFabricIconFontName": "ChatBot",
     "properties": {
-      "title": "Helper Bot",
+      "title": "ChatPoint",
       "description": "Ask questions about SharePoint.",
       "apiBaseUrl": "https://beticketclassification.onrender.com"
     }
